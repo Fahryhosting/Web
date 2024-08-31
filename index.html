@@ -1,59 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Web | Portofolio</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="sidebar">
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Web Shop Kami</h1>
         <nav>
-          <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Portofolio</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Produk</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
         </nav>
-      </div>
-      <main class="content">
-        <section class="hero">
-          <img src="online.png" alt="" />
-          <div class="hero-content">
-            <h1>Profesi</h1>
-            <br />
-            <h2>Junior Content Writer at Dicoding</h2>
-            <br /><br />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, aperiam dolore
-              assumenda velit repellendus recusandae magni consectetur mollitia facere incidunt
-              inventore perspiciatis debitis doloribus ullam minima culpa voluptatem. Repellendus,
-              option.
-            </p>
-            <a href="" class="action-btn">Profile Saya</a>
-          </div>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>Produk Kami</h2>
+            <div class="product">
+                <img src="produk1.jpg" alt="Produk 1">
+                <h3>Produk 1</h3>
+                <p>Deskripsi singkat tentang produk 1.</p>
+                <p>Harga: Rp100.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product">
+                <img src="produk2.jpg" alt="Produk 2">
+                <h3>Produk 2</h3>
+                <p>Deskripsi singkat tentang produk 2.</p>
+                <p>Harga: Rp150.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <!-- Tambahkan lebih banyak produk sesuai kebutuhan -->
         </section>
-      </main>
-      <div class="footer">
-        <footer>
-          <ul>
-            <li>
-              <img src="instagram.png" alt="" /><a><p>Instagram</p></a>
-            </li>
-            <li>
-              <img src="facebook.png" alt="" /><a><p>Facebook</p></a>
-            </li>
-            <li>
-              <img src="twitter.png" alt="" /><a><p>Twitter</p></a>
-            </li>
-            <li>
-              <img src="telegram.png" alt="" /><a><p>Telegram</p></a>
-            </li>
-          </ul>
-        </footer>
-      </div>
-    </div>
-  </body>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Web Shop. Semua hak dilindungi.</p>
+    </footer>
+</body>
 </html>
