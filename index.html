@@ -1,105 +1,136 @@
 <!DOCTYPE html>
-<html>
-<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
-
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
-  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script><link href="https://feeldreams.github.io/forkamuaja/style.css" rel="stylesheet" type="text/css" />
-  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
-  
+<html lang="id">
 <head>
-<title>Pantun Romantis Buat Kamu</title>
-<link rel="icon" type="image/x-icon" href="https://malasid.github.io/favicon.png">
-<meta name="description" content="HTML Replit Coding">
-<!-- 
-  Made with love by Rayys!
-  
-     Blog: feeldream.id
-     Instagram: @rayyarrr
-     TikTok: @feelthisray
-     Email: rayyarr73@gmail.com
-     
-  Thanks to all <3
--->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelas Kenangan Kita</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+    }
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #023e8a;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+    nav a:hover {
+      background: #0096c7;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      background: #0077b6;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
-  
-   <!-- Ganti Audio di sini -->
-   <audio src="https://feeldreams.github.io/angelbabypart2.mp3" id="linkmp3" class="sembunyi"></audio>
-   
-   <div id="bodyblur">
-     <!-- Wallpaper --><img src="https://feeldreams.github.io/pics/awan1.jpg" id="wallpaper"/>
-   </div>
-   
-   <div id='Content'>
 
-     <div id="ftAwal">
-       <!-- Stiker Pembuka -->
-       <img src="https://feeldreams.github.io/pandaputih.gif" id="ftoAwal"/>
-     </div>
+  <header>
+    <h1>Kelas Kenangan XII IPA 3</h1>
+    <p>"Sahabat Selamanya, Kenangan Tak Terlupakan"</p>
+  </header>
 
-     <div id="loveIn">
-       <!-- Tombol LOVE --><label class='lovein'>❤️</label>
-     </div>
-     <p id="ket">Sentuh LOVEnya!</p>
-     
-     <div class="kumpulanstiker">
-         <!-- Stiker untuk Konten -->
-         <img src="https://feeldreams.github.io/bunga.gif" id="fotostiker"/>
-         <img src="https://feeldreams.github.io/emawh.gif" id="fotostiker1"/>
-         <img src="https://feeldreams.github.io/pandakuning.gif" id="fotostiker2"/>
-         <img src="https://feeldreams.github.io/pusn.gif" id="fotostiker3"/>
-         <img src="https://feeldreams.github.io/gumush.gif" id="fotostikerA"/>
-     </div>
-     
-     <div><div id='pergeseran'>
-      
-        <p><b>
-          <span>hai kamuuu<br>aku ada pantun buat kamu</span>
-        </b></p>
-        
-        <p><b>
-          <span>ikan hiu bawa koper</span>
-        </b></p>
-        
-        <p><b>
-          <span>i love uu forever<3333</span>
-        </b></p>
+  <nav>
+    <a href="#wali">Wali Kelas</a>
+    <a href="#siswa">Daftar Siswa</a>
+    <a href="#kenangan">Kenangan</a>
+  </nav>
 
-        <p><b>
-          <span>sate² apa yg bikin aku bahagia?</span>
-        </b></p>
+  <section id="wali">
+    <h2>Wali Kelas</h2>
+    <div class="card">
+      <img src="wali.jpg" alt="Foto Wali Kelas">
+      <h3>Bu Siti Aminah</h3>
+      <p>"Tetaplah berusaha dan jangan pernah menyerah, anak-anakku."</p>
+    </div>
+  </section>
 
-        <p><b>
-          <span>saterusnya sama kamu<br>😍😆🥰🤭🤣</span>
-        </b></p>
-        
-        <p><b>
-          <span id="iniakhir">terakhir nihh ><</span>
-        </b></p>
-       
-     </div></div>
+  <section id="siswa">
+    <h2>Daftar Siswa</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="siswa1.jpg" alt="Siswa 1">
+        <h3>Andi</h3>
+      </div>
+      <div class="card">
+        <img src="siswa2.jpg" alt="Siswa 2">
+        <h3>Budi</h3>
+      </div>
+      <div class="card">
+        <img src="siswa3.jpg" alt="Siswa 3">
+        <h3>Citra</h3>
+      </div>
+      <!-- Tambahkan siswa lain di sini -->
+    </div>
+  </section>
 
-     <p id="ketgeser">Klik untuk Geser!</p>
+  <section id="kenangan">
+    <h2>Kenangan Kita</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="kenangan1.jpg" alt="Kenangan 1">
+        <p>Acara perpisahan sekolah</p>
+      </div>
+      <div class="card">
+        <img src="kenangan2.jpg" alt="Kenangan 2">
+        <p>Study tour ke Jogja</p>
+      </div>
+      <div class="card">
+        <img src="kenangan3.jpg" alt="Kenangan 3">
+        <p>Foto bersama di kelas</p>
+      </div>
+      <!-- Tambahkan kenangan lain -->
+    </div>
+  </section>
 
-     <div><blockquote id='bq'>
-       <p id="kalimat"></p>
-       <p id="pesanAkhir" class="gaya4"></p>
-     </blockquote></div>
+  <footer>
+    <p>&copy; 2025 Kelas XII IPA 3 - Kenangan Kita Selamanya</p>
+  </footer>
 
-   </div>
-   
-<script>
-  const body = document.querySelector("body");const swalst = Swal.mixin({timer: 2500, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90,}); audio = new Audio('' + linkmp3.src); ftganti=0;fungsi=0;fungsiAwal=0;deffotostiker=fotostiker.src;function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);Content.style = "opacity:1;margin-top:14vh"; const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageHeight: 80,}); 
-  
-  teksAkhir = "di jalan ada lampu,<br>di kuburan ada hantu,<br>di kerajaan ada ratu,<br>tapi di hatiku...<br>cuma ada kamu, jiakhhh<3333";
-  teksAkhirB = "i love uuu ><";
-</script>
-<script src="https://malasid.github.io/pantunromantis/pantunromantis.js"></script>
 </body>
 </html>
