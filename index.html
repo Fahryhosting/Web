@@ -3,260 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kelas XII DKV 1- Kenangan</title>
-  <style>
-    /* RESET */
-    * {margin:0;padding:0;box-sizing:border-box;}
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background:#f4f6f9;
-      color:#333;
-      line-height:1.6;
-    }
-
-    /* NAVBAR */
-    nav {
-      position: fixed;
-      top: 0; left:0; right:0;
-      background:#023e8a;
-      display:flex;
-      justify-content:center;
-      z-index:1000;
-    }
-    nav a {
-      color:white;
-      padding:15px 25px;
-      text-decoration:none;
-      transition:0.3s;
-    }
-    nav a:hover {
-      background:#0096c7;
-      border-radius:4px;
-    }
-
-    /* HERO */
-    header {
-      background:url('kelas.jpg') center/cover no-repeat;
-      height:100vh;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      align-items:center;
-      text-align:center;
-      color:white;
-      position:relative;
-    }
-    header::after {
-      content:'';
-      position:absolute;top:0;left:0;right:0;bottom:0;
-      background:rgba(0,0,0,0.5);
-    }
-    header h1, header p {
-      position:relative;
-      z-index:1;
-    }
-    header h1 {font-size:3em;margin-bottom:10px;}
-    header p {font-size:1.2em;}
-
-    /* SECTION */
-    section {
-      padding:80px 20px;
-      max-width:1100px;
-      margin:auto;
-    }
-    h2 {
-      text-align:center;
-      margin-bottom:40px;
-      font-size:2em;
-      color:#023e8a;
-    }
-
-    /* CARD GRID */
-    .grid {
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
-      gap:25px;
-    }
-    .card {
-      background:white;
-      border-radius:10px;
-      box-shadow:0 4px 10px rgba(0,0,0,0.1);
-      text-align:center;
-      padding:20px;
-      transition:transform 0.3s;
-    }
-    .card:hover {
-      transform:translateY(-10px);
-    }
-    .card img {
-      width:120px;
-      height:120px;
-      object-fit:cover;
-      border-radius:50%;
-      margin-bottom:15px;
-      border:4px solid #0096c7;
-    }
-
-    /* SLIDESHOW */
-    .slideshow {
-      position:relative;
-      max-width:800px;
-      margin:auto;
-      overflow:hidden;
-      border-radius:10px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.2);
-    }
-    .slides {
-      display:none;
-      width:100%;
-    }
-    .slideshow img {
-      width:100%;
-      height:450px;
-      object-fit:cover;
-    }
-    .prev, .next {
-      cursor:pointer;
-      position:absolute;
-      top:50%;
-      padding:16px;
-      color:white;
-      font-weight:bold;
-      font-size:20px;
-      transition:0.3s;
-      border-radius:50%;
-      user-select:none;
-    }
-    .prev {left:20px; transform:translateY(-50%);}
-    .next {right:20px; transform:translateY(-50%);}
-    .prev:hover, .next:hover {background:rgba(0,0,0,0.5);}
-
-    /* FOOTER */
-    footer {
-      background:#023e8a;
-      color:white;
-      text-align:center;
-      padding:20px;
-      margin-top:40px;
-    }
-
-    /* ANIMATIONS */
-    .fade-in {
-      opacity:0;
-      transform:translateY(20px);
-      transition:all 0.8s ease;
-    }
-    .fade-in.show {
-      opacity:1;
-      transform:translateY(0);
-    }
-  </style>
+  <title>Kelas XII IPA 3 - Website Kenangan</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav>
-    <a href="#wali">Wali Kelas</a>
-    <a href="#siswa">Daftar Siswa</a>
-    <a href="#kenangan">Kenangan</a>
+    <div class="logo">XII IPA 3</div>
+    <ul>
+      <li><a href="#wali">Wali Kelas</a></li>
+      <li><a href="#siswa">Siswa</a></li>
+      <li><a href="#kenangan">Kenangan</a></li>
+      <li><a href="#gallery">Galeri</a></li>
+      <li><a href="#pesan">Buku Kenangan</a></li>
+    </ul>
+    <div class="toggle-btn" onclick="toggleDark()">🌙</div>
   </nav>
 
   <!-- HERO -->
   <header>
-    <h1>XII DKV 1</h1>
+    <h1>XII IPA 3</h1>
     <p>"Sahabat Selamanya, Kenangan Tak Terlupakan"</p>
   </header>
 
   <!-- WALI KELAS -->
-  <section id="wali" class="fade-in">
+  <section id="wali">
     <h2>Wali Kelas</h2>
-    <div class="card">
+    <div class="wali">
       <img src="wali.jpg" alt="Wali Kelas">
-      <h3>Bu Rina Mustika</h3>
+      <h3>Bu Siti Aminah</h3>
       <p>"Tetaplah berusaha dan jangan pernah menyerah, anak-anakku."</p>
     </div>
   </section>
 
   <!-- SISWA -->
-  <section id="siswa" class="fade-in">
+  <section id="siswa">
     <h2>Daftar Siswa</h2>
     <div class="grid">
-      <div class="card">
-        <img src="siswa1.jpg" alt="Andi">
-        <h3>Adelia Umairah</h3>
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="siswa1.jpg" alt="Andi">
+            <h3>Andi</h3>
+          </div>
+          <div class="flip-back">
+            <p>Suka bermain bola</p>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <img src="siswa2.jpg" alt="Budi">
-        <h3>Aditia Maulana</h3>
-      </div>
-      <div class="card">
-        <img src="siswa3.jpg" alt="Citra">
-        <h3>Agung Prasetio</h3>
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="siswa2.jpg" alt="Budi">
+            <h3>Budi</h3>
+          </div>
+          <div class="flip-back">
+            <p>Jago Matematika</p>
+          </div>
+        </div>
       </div>
       <!-- Tambahkan siswa lain -->
     </div>
   </section>
 
-  <!-- KENANGAN -->
-  <section id="kenangan" class="fade-in">
+  <!-- KENANGAN (SLIDESHOW) -->
+  <section id="kenangan">
     <h2>Kenangan Kita</h2>
     <div class="slideshow">
-      <div class="slides">
-        <img src="kenangan1.jpg" alt="Kenangan 1">
-      </div>
-      <div class="slides">
-        <img src="kenangan2.jpg" alt="Kenangan 2">
-      </div>
-      <div class="slides">
-        <img src="kenangan3.jpg" alt="Kenangan 3">
-      </div>
+      <div class="slides"><img src="kenangan1.jpg"></div>
+      <div class="slides"><img src="kenangan2.jpg"></div>
+      <div class="slides"><img src="kenangan3.jpg"></div>
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
   </section>
 
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2>Galeri Foto</h2>
+    <div class="gallery">
+      <img src="galeri1.jpg" onclick="openModal(this)">
+      <img src="galeri2.jpg" onclick="openModal(this)">
+      <img src="galeri3.jpg" onclick="openModal(this)">
+    </div>
+  </section>
+
+  <div class="modal" id="modal">
+    <span onclick="closeModal()">&times;</span>
+    <img id="modal-img">
+  </div>
+
+  <!-- FORM BUKU KENANGAN -->
+  <section id="pesan">
+    <h2>Buku Kenangan</h2>
+    <form onsubmit="saveMessage(event)">
+      <input type="text" id="nama" placeholder="Nama" required>
+      <textarea id="pesan" rows="4" placeholder="Tulis pesan..." required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+    <div id="list-pesan" style="margin-top:30px;"></div>
+  </section>
+
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 XII DKV 1 - Kenangan Kita Selamanya</p>
+    <p>&copy; 2025 XII IPA 3 - Kenangan Kita Selamanya</p>
   </footer>
 
-  <script>
-    // SLIDESHOW
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("slides");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
-      slides[slideIndex-1].style.display = "block";  
-      setTimeout(showSlides, 4000); // Ganti slide tiap 4 detik
-    }
-
-    function plusSlides(n) {
-      slideIndex += n-1;
-      showSlides();
-    }
-
-    // FADE IN ON SCROLL
-    const faders = document.querySelectorAll('.fade-in');
-    const options = { threshold:0.3 };
-    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("show");
-        observer.unobserve(entry.target);
-      });
-    }, options);
-
-    faders.forEach(fader => {appearOnScroll.observe(fader)});
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
-
-
