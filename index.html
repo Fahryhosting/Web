@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website Kelas 10 IPA 1 SMA Harapan Bangsa - Profil Kelas, Foto Kenangan, Galeri, Jadwal, dan Kontak">
+    <title>Kelas 10 IPA 1 - SMA Harapan Bangsa</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header/Navigasi -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-school"></i> SMA Harapan Bangsa
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kelas">Profil Kelas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kenangan">Foto Kenangan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#jadwal">Jadwal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero d-flex align-items-center text-center text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="display-4 fw-bold animate-fade-in">Selamat Datang di Kelas 10 IPA 1</h1>
+                    <p class="lead">SMA Harapan Bangsa - Tempat Belajar yang Inspiratif dan Modern</p>
+                    <a href="#kelas" class="btn btn-light btn-lg mt-3">Lihat Profil Kelas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profil Kelas -->
+    <section id="kelas" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Profil Kelas 10 IPA 1</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h4>Guru Pembimbing</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">Bu. Siti - Matematika</li>
+                        <li class="list-group-item">Pak. Budi - Fisika</li>
+                        <li class="list-group-item">Bu. Ani - Biologi</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <h4>Daftar Siswa (Contoh)</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">Ahmad Rizki</li>
+                        <li class="list-group-item">Siti Nurhaliza</li>
+                        <li class="list-group-item">Budi Santoso</li>
+                        <!-- Tambahkan lebih banyak -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Foto Kenangan (Fitur Baru) -->
+    <section id="kenangan" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Foto Kenangan Kelas 10 IPA 1</h2>
+            <p class="text-center text-muted mb-4">Galeri spesial untuk mengenang momen-momen indah bersama teman dan guru.</p>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="kenangan-card">
+                        <img src="images/kenangan1.jpg" class="img-fluid rounded shadow kenangan-img" alt="Piknik Kelas 2023" onclick="openModal(this.src)">
+                        <div class="kenangan-overlay">
+                            <p class="kenangan-caption">Piknik Kelas 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="kenangan-card">
+                        <img src="images/kenangan2.jpg" class="img-fluid rounded shadow kenangan-img" alt="Ulang Tahun Guru" onclick="openModal(this.src)">
+                        <div class="kenangan-overlay">
+                            <p class="kenangan-caption">Ulang Tahun Guru Bu. Siti</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="kenangan-card">
+                        <img src="images/kenangan3.jpg" class="img-fluid rounded shadow kenangan-img" alt="Lomba Sains" onclick="openModal(this.src)">
+                        <div class="kenangan-overlay">
+                            <p class="kenangan-caption">Lomba Sains IPA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="kenangan-card">
+                        <img src="images/kenangan4.jpg" class="img-fluid rounded shadow kenangan-img" alt="Studi Tour" onclick="openModal(this.src)">
+                        <div class="kenangan-overlay">
+                            <p class="kenangan-caption">Studi Tour ke Museum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="kenangan-card">
+                        <img src="images/kenangan5.jpg" class="img-fluid rounded shadow kenangan-img" alt="Hari Guru" onclick="openModal(this.src)">
+                        <div class="kenangan-overlay">
+                            <p class="kenangan-caption">Hari Guru Nasional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="kenangan-card">
+                        <img src="images/kenangan6.jpg" class="img-fluid rounded shadow kenangan-img" alt="Foto Kelas" onclick="openModal(this.src)">
+                        <div class="kenangan-overlay">
+                            <p class="kenangan-caption">Foto Bersama Kelas</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tambahkan lebih banyak foto kenangan di sini -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri -->
+    <section id="galeri" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Galeri Foto</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="images/siswa1.jpg" class="img-fluid rounded shadow" alt="Kegiatan Kelas" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal(this.src)">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="images/siswa2.jpg" class="img-fluid rounded shadow" alt="Olahraga" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal(this.src)">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="images/siswa3.jpg" class="img-fluid rounded shadow" alt="Piknik" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal(this.src)">
+                </div>
+                <!-- Tambahkan lebih banyak gambar -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal untuk Lightbox Galeri -->
+    <div class="modal fade" id="imageModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <img id="modalImage" src="" class="img-fluid" alt="Gambar Besar">
+            </div>
+        </div>
+    </div>
+
+    <!-- Jadwal -->
+    <section id="jadwal" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Jadwal Pelajaran Mingguan</h2>
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Hari</th>
+                        <th>07:00-08:00</th>
+                        <th>08:00-09:00</th>
+                        <th>09:00-10:00</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Senin</td>
+                        <td>Matematika</td>
+                        <td>Fisika</td>
+                        <td>Biologi</td>
+                    </tr>
+                    <tr>
+                        <td>Selasa</td>
+                        <td>Kimia</td>
+                        <td>Ekonomi</td>
+                        <td>Bahasa Inggris</td>
+                    </tr>
+                    <!-- Tambahkan baris lain -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Hubungi Kami</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2023 Kelas 10 IPA 1 - SMA Harapan Bangsa. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
